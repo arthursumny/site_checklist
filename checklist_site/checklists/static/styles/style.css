@@ -9,24 +9,40 @@ header {
     align-items: center;
     background-color: #fefe7c;
     padding: 15px 20px;
-    margin: 20px 40px 10px 40px;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
     border: solid #272530 3px ;
     border-radius: 50px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     font-style: normal #060501;
 }
 
+header div {
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 35px;
+}
+
+header div .nav {
+    display: inline-block;
+}
+
 header span {
     color: black;
     text-decoration: none;
+    justify-content: none;
     font-weight: bold;
-    padding-left: 50px;
-    padding-right: 50%;
+}
+
+header span.destaque {
+    color: #ff4c4e;
 }
 
 header a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
     padding-right: 15px;
 }
 
@@ -35,4 +51,47 @@ header a:not(:last-child) {
 
 body {
     background-color: #fffac3;
+}
+
+#content-container {
+    display: inline-flex;
+    height: 550px;
+    background-color: #fffeec;
+    border: solid black 3px;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-style: normal #060501;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2%;
+}
+
+#image-container {
+    width: 33%;
+    border: solid black 3px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-left: 35px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#image-container img {
+    width: 100%; 
+    height: auto; 
+}
+
+#context-container {
+    width: 63%;
+    height: 83%;
+    border-left: solid #272530 3px ;
+    margin-left: 35px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 35px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
