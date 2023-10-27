@@ -10,9 +10,11 @@
 </head>
 <body>
     <header>
-        <div id="titulo"><span class="organiza">Organiza<span class="destaque">AI</span></span> </div>
-        <div id="nav">
-        <a href="{% url 'pagina_inicial' %} ">Página inicial</a>
+        <div id="titulo">
+            <img id ="logo" class="logo" src="{% static 'images/logo.png' %}">
+        </div>
+        <div id="nav" class="nav">
+        <a href="{% url 'pagina_inicial' %} ">Home</a>
         <a href="{% url 'pagina_checklists' %}">Checklists</a>
         <a href="{% url 'pagina_planners' %}">Planners</a>
         <a href="{% url 'pagina_workbooks' %}">Workbooks</a>
@@ -24,7 +26,7 @@
         {% endblock %}
     </main>
     <footer>
-        <p>&copy; 2023 Arthur Sumny Saggin - Todos os direitos reservados</p>
+        <p>&copy; 2023 OrganizaAi - Todos os direitos reservados</p>
     </footer>
 </body>
 </html>
